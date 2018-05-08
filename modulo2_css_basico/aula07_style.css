@@ -1,0 +1,19 @@
+body {
+    margin:0;
+}
+
+.texto {
+    width:500px;
+    height:200px;
+    background-color:#EEEEEE;
+    color:#FF0000;
+    font-size:40px;
+    font-family:Verdana,Helvetica,Arial,Times New Roman;
+    font-weight:bold;
+    /*font-weight:200;*/
+    text-align:center;
+    /*text-transform:lowercase;*/
+    text-transform:uppercase;
+    /*text-decoration:underline;*/
+    text-decoration:line-through;
+}

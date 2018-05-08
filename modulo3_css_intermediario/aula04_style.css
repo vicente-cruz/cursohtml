@@ -1,0 +1,26 @@
+body {
+    margin:0;
+}
+
+a {
+    color:#000000;
+    font-size:40px;
+    /*text-decoration:underline;*/
+    text-decoration:none;
+}
+
+a:hover {
+    background-color:#FFFF00;
+    text-decoration:underline;
+    text-transform:uppercase;
+}
+
+/* Para links que mandam para dentro da propria pagina */
+a:active {
+    
+}
+
+.acao:hover {
+    background-color:#000000;
+    color:#FFFFFF;
+}

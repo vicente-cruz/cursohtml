@@ -1,0 +1,6 @@
+Container: 990px;
+Header: 120px;
+Item do menu: padding = 15px;
+Banner: 670px;
+Banner Options: 210px;
+Banners 1, 2 e 3: 20px;

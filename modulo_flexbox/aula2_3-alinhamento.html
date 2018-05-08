@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 2</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0" />
+        <style type="text/css">
+            .container {
+                display:flex;
+                flex-flow:row wrap;
+                background-color:#DDDDDD;
+                margin:5px;
+            }
+            
+            .container div {
+                width:200px;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+            .container2 {
+                height:300px;
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:flex-start;
+                background-color:#DDDDDD;
+                margin:5px;
+            }
+            
+            .container2 div {
+                width:100px;
+                height:100px;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+            .container3 {
+                height:300px;
+                display:flex;
+                flex-direction:row;
+                flex-wrap:wrap;
+                justify-content:flex-start;
+                align-items:center;
+                align-content:flex-end;
+                background-color:#DDDDDD;
+                margin:5px;
+            }
+            
+            .container3 div {
+                width:100px;
+                height:100px;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+                background-color:#FF0000;
+            }
+            
+            .div10 {
+                align-self:flex-start;
+            }
+            
+            .div5{
+                order:1;
+            }
+        </style>
+    </head>
+    <body>
+        Caso a largura fixa das divs extrapolar a linha, o flex redimensiona para encaixar na linha.<br/>
+        Quebra de linha = flex-wrap:wrap; padrão é 'nowrap'.<br/>
+        flex-flow: row wrap;
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+        </div>
+        
+        <strong>"justify-content"</strong>: Alinha na direção de exibição do "flex-direction". [flex-start | flex-end | center | space-between | space-around]<br/>
+        <strong>"align-items"</strong>: Alinha na direção contrária. [flex-start | flex-end | center] <br/>
+        Centralizando os itens na horizontal: justify-content:center; Subtitui o 'margin:auto;'<br/>
+        Centralizando os itens na vertical: align-items:center;<br/>
+        <div class="container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        
+        align-self:[flex-start... ] ignora alinhamento flec do div pai e usa a dela própria
+        order:[] altera a ordem de exibição do item. Por default, todos são 0.
+        align-content:[flex-start...] - EM CONJUNTO COM "flex-wrap:wrap", define o alinhamento dos itens ao sofrer o wrap.
+        <div class="container3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div class="div5">5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div class="div10">10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+        </div>
+    </body>
+</html>

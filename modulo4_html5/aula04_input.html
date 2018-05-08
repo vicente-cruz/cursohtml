@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tags de Input</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="aula04_style.css" />
+    </head>
+    <body>
+        <form method="POST">
+            <!--Mostra um X para limpar o campo-->
+            Busca:<br/>
+            <input type="search" name="busca" /><br/><br/>
+
+            <!--Garante que deve ser inserido <algo>@<algo> -->
+            E-mail:<br/>
+            <input type="email" name="email" required /><br/><br/>
+            
+            <!--URL válidas-->
+            URL:<br/>
+            <input type="url" name="url" required /><br/><br/>
+            
+            <!-- Telefones -->
+            Telefone:<br/>
+            <input type="tel" name="telefone" required /><br/><br/>
+            
+            <!--Numeros -->
+            Numero:<br/>
+            <input type="number" name="numero" required /><br/><br/>
+            
+            <!--Range-->
+            Intervalo:<br/>
+            <input type="range" min="1" max="100" name="intervalo" /><br/><br/>
+
+            <!--Time -->
+            Hora:<br/>
+            <input type="time" name="tempo" /><br/><br/>
+            
+            <!--Datas -->
+            Data:<br/>
+            <input type="date" name="data" /><br/><br/>
+            
+            <!--Datetime -->
+            Data e hora:<br/>
+            <input type="datetime-local" name="data" /><br/><br/>
+            
+            <!--Mês -->
+            Mês:<br/>
+            <input type="month" name="mes" /><br/><br/>
+
+            <!--Dia da semana -->
+            Semana:<br/>
+            <input type="week" name="semana" /><br/><br/>
+
+            <!--Color -->
+            Selecionar COR:<br/>
+            <input type="color" name="cor" /><br/><br/>
+            
+            <input type="submit" value="Enviar" />
+        </form>
+    </body>
+</html>

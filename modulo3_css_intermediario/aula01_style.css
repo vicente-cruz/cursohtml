@@ -1,0 +1,20 @@
+body {
+    margin:0;
+}
+
+.texto {
+    width:700px;
+    height:500px;
+    background-color:#EEEEEE;
+    color:#FF0000;
+    font-size:20px;
+    font-family:Helvetica,Verdana,Arial,Times New Roman;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:underline;
+    
+    /* Iguala o espaco da esquerda c/o da direita: centraliza!*/
+    margin:auto;
+    margin-top:20px;
+    padding-top:20px;
+}

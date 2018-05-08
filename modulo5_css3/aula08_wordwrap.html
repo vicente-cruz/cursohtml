@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 09 - Wordwrap</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <style type="text/css">
+            body {
+                margin:0;
+            }
+            .div_cobaia {
+                width:150px;
+                height:200px;
+                border:1px solid #000000;
+                
+                /* ERRADOOOOOOO */
+                /*overflow:hidden; */
+                
+                /* Certo! */
+                /*word-wrap:normal;*/
+                word-wrap:break-word;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div_cobaia">
+            Esta parágrafo contém um texto muito muuuuuuuuuuuuuuuuuito longo, namely:jsdfçldsjaçlfkasdjkçlfsdajçflsdajfl
+            This word must be wraped into the DIV
+        </div>
+    </body>
+</html>

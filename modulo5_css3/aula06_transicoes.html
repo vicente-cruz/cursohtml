@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 06 - Transições</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <style type="text/css">
+            body {
+                margin:0;
+            }
+            .div_cobaia {
+                width:150px;
+                height:150px;
+                margin:auto;
+                margin-top:100px;
+                background-color:#00BB00;
+                /*Informa o tipo de transicao!*/
+                 /*linear: mesma velocidade do comeco ao fim*/
+                transition:all 0.2s linear;
+            }
+            .div_cobaia:hover {
+                width:300px;
+                background-color:#BB0000;
+            }
+            .a_cobaia {
+                color:#000000;
+                transition:all 0.2s linear;
+            }
+            .a_cobaia:hover {
+                color:#BB00BB;
+                font-size:20px;
+                font-weight:bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="div_cobaia"></div>
+        <a class="a_cobaia" href="">Teste Transicao no link</a>
+    </body>
+</html>

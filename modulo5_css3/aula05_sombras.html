@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aula 05 - Sombras</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <style type="text/css">
+            body {
+                margin:0;
+            }
+            .teste {
+                width:150px;
+                height:150px;
+                background-color:#00FF00;
+                margin:auto;
+                margin-top:100px;
+                border-radius:75px;
+                /*sombra horizontal, s. vert., blur, color*/
+/*                box-shadow:20px 10px 20px #888888;*/
+                box-shadow:0px 0px 30px #888888;
+            }
+            .texto {
+                width:150px;
+                height:150px;
+                line-height:150px;
+                font-size:15px;
+                font-family:Arial;
+                font-weight:bold;
+                text-align:center;
+                text-shadow:5px 5px 3px #AAAAAA;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="teste">
+            <div class="texto">Teste de sombra</div>
+        </div>
+    </body>
+</html>

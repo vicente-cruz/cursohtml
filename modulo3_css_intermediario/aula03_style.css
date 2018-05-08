@@ -1,0 +1,28 @@
+body {
+    margin:0;
+}
+
+.texto {
+    width:300px;
+    height:100px;
+    background-color:#EEEEEE;
+    color:#FF0000;
+    font-size:20px;
+    font-family:Times New Roman,Verdana,Helvetica;
+    font-weight:bold;
+    text-align:center;
+    text-decoration:underline;
+    margin-bottom:10px;
+    
+    /*Não mostra*/
+    /*display:none;*/
+    
+    /*Mostra em forma de Bloco: Padrao da div*/
+    /*display:block;*/
+    
+    /*Mostra na mesma linha DO TEXTO. No meio de um texto SPAN, por exemplo*/
+    /*display:inline;*/
+    
+    /*Mostra na mesma linha DO BLOCO. Divs uma ao lado da outra*/
+    display:inline-block;
+}

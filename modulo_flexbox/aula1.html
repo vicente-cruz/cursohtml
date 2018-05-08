@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projeto Flexbox</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+        <style type="text/css">
+            .container {
+                display:flex;
+                flex-direction:row; 
+                background-color:#DDDDDD;
+                margin:10px;
+            }
+            
+            .container2 {
+                display:flex;
+                flex-direction:column; 
+                background-color:#DDDDDD;
+                margin:10px;                
+            }
+            
+            .container3 {
+                display:flex;
+                flex-direction:row; 
+                background-color:#DDDDDD;
+                margin:10px;                   
+            }
+            
+            .container4 {
+                display:flex;
+                flex-direction:row; 
+                background-color:#DDDDDD;
+                margin:10px;                   
+            }
+            
+            .container div {
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+            .container2 div {
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;                
+            }
+            
+            .container3 div {
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;                
+            }
+            
+            .div1 {
+                flex:1;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+            .div2 {
+                flex:2;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+            .div3 {
+                flex:1;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+
+            .div4 {
+                flex:1;
+                background-color:#FF0000;
+                margin:10px;
+                padding:10px;
+                font-size:10px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        
+        <div>Quero as DIVs uma ao lado da outra e com bordas. Se width=50%, a linha quebra... Flexbox corrige isso!</div>
+        <div>div {width:200px; height:200px; background-color:#FF0000; margin:10px; float:left; }</div><br/>
+        
+        A div abaixo controla todas as divs internas. Flexbox atua em forma de linha! flex-direction:[row | column | [row | column] reverse]
+        <div class="container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+        
+        <div class="container2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <div class="container3">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        
+        <div class="container4">
+            <div class='div1'>flex 1 = grupo 1</div>
+            <div class='div2'>flex 2 (dobro do tamanho do grupo 1) = grupo 2</div>
+            <div class='div3'>flex 3 (triplo do tamanho do grupo 1)= grupo 3</div>
+            <div class='div4'>flex 4 (quadruplo do tamanho do grupo 1)= grupo 4</div>
+        </div>
+        
+    </body>
+</html>

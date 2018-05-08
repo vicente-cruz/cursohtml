@@ -1,0 +1,24 @@
+body {
+    margin:0;
+}
+
+.teste {
+    width:600px;
+    height:300px;
+    background-color: #FF0000;
+}
+
+/*Enquanto a largura da tela for <= 500px, executa!*/
+@media only screen and (min-width:300px) and (max-width:600px) {
+    .teste {
+        background-color:#00FF00;
+        width:400px;
+    }
+}
+
+/* Para Smartphones: se ele estiver "deitado", aplica o CSS */
+@media only screen and (orientation:landscape) {
+    .teste {
+        width:200px;
+    }
+}
