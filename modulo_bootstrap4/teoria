@@ -1,0 +1,16 @@
+Aula 1: Sobre o bootstrap 4
+    Baixar a versão 4 do bootstrap e descompactar. Notar pastas CSS e JS
+    Baixar o JQuery
+    Criar estrutura de diretorio, com os seguintes arquivos
+        assets/
+            js/jquery.min.js e bootstrap.bundle.min.js (para usar o popper)
+            css/bootstrap.min.css
+            images/
+
+Aula 2: Incluindo arquivos do bootstrap no index.html
+    Criar o arquivo index.html
+        - doctype, meta charset e viewport com 'shrink-to-fit=no'
+        - carregar os arquivos css no head e javascript no fim do body (evita demora)
+
+Aula 3: Usando 'Console do Navegador'
+    Abrir o "Inspecionar" e simular outros dispositivo, responsividade, etc...
