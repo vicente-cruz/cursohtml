@@ -14,3 +14,67 @@ Aula 2: Incluindo arquivos do bootstrap no index.html
 
 Aula 3: Usando 'Console do Navegador'
     Abrir o "Inspecionar" e simular outros dispositivo, responsividade, etc...
+
+Aula 4: Grids - Introdução
+    Colocar conteúdos preferencialmente dentro de "container"
+        *) É responsivo e detecta se site é acessado por dispositivos: tablet, smartfone
+    "container-fluid": Conteúdo se expande por toda a tela!
+
+    Grid (como "Excel") - Bootstrap 4 usa "flex"
+        *) criar uma div "row" com três "cols"
+        *) Para deixar responsivo para celular, colocar:
+            - col-sm (small-device, celulares)
+            - col-md (para tablets)
+
+Aula 5: Grids - Colunas com largura específicas
+    Quebrando linhas: 
+        Opção 1) Quebrar colunas de uma linha: <div class="w-100">
+        Opção 2) Criar outra linha
+    Fixando tamanho da coluna:
+        ex: "col-2" -> Volta a usar a matemática das 12 colunas
+    Fixando tamanho das colunas com responsividade
+        ex: "col-sm-2" Calcula 2 colunas das 12, com responsividade para celular
+
+Aula 6: Grids - Ordenando colunas:
+    "order-first", "order-last", "order-1..n"
+    <div class="col order-first">
+
+    Colunas sem "order-1..n" vem primeiro!
+
+Aula 7: Grids - Flexbox -> JustifyContent e AlignItems
+    Alinhando à esquerda/centro/direita: <div class="row justify-content-start/center/end">
+    Alinhando espalhadas/espaçamento igual <div class="row justify-content-around/between">
+    Alinhando acima/centro/abaixo: <div class="row align-items-start/center/end">
+
+Aula 8: Media Component
+    <div class="media">
+        <img src="foto.jpg" class="mr-3">
+        <div class="media-body">
+            <h5>Titulo</h5>
+            <p>Texto...</p>
+        </div>
+    </div>
+
+    <ul class="list-unstyled">
+        <li class="media">
+            <img src="foto.jpg" class="mr-3">
+            <div class="media-body">
+                <h5>Titulo</h5>
+                <p>Texto...</p>
+            </div>
+        </li>
+        <li class="media">
+            <img src="foto1.jpg" class="mr-3 align-self-center">
+            <div class="media-body">
+                <h5>Titulo 1</h5>
+                <p>Texto...</p>
+            </div>
+        </li>
+        <li class="media">
+            <img src="foto2.jpg" class="mr-3 align-self-end">
+            <div class="media-body">
+                <h5>Titulo 2</h5>
+                <p>Texto...</p>
+            </div>
+        </li>
+    </ul>

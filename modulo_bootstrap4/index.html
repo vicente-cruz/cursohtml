@@ -5,9 +5,188 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+        <style type="text/css">
+            .row [class^=col-], .row .col {
+                border:1px solid #CCC;
+                background-color:#DDD;
+            }
+            .row {
+                padding:10px;
+                background-color:#FF9999;
+            }
+            
+            .aula-justify {
+                height:500px;
+                border:2px solid #0000FF;
+            }
+            .row .col-aula-justify {
+                height: 50px;
+                border:1px solid #CCC;
+                background-color:#DDD;
+            }
+            .avatar {
+                width:50px;
+                height:50px;
+            }
+            
+            fieldset {
+                border:1px solid #000000;
+                padding-left:10px;
+            }
+            legend {
+                width:inherit;
+                padding: 0 10px;
+            }
+            
+            .media {
+                border:1px solid #CCCCCC;
+                background-color:#EEEEEE;
+            }
+            
+            .aula9-tipografia {
+                width:150px;
+                height:100px;
+                border:1px solid #000000;
+            }
+        </style>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col">...</div>
+                <div class="col">...</div>
+                <div class="col">...</div>
+            </div>
+            <div class="row">
+                <div class="col-2">...</div>
+                <div class="col-2">...</div>
+                <div class="col">...</div>
+            </div>
+            <div class="row">
+                <div class="col-2">...</div>
+                <div class="col-md-2">...</div>
+                <div class="col-4">...</div>
+            </div>
+            <div class="row">
+                <div class="col-2">...</div>
+                <div class="col-2">...</div>
+                <div class="col-2">...</div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">...</div>
+                <div class="col-md-2">...</div>
+                <div class="col-2">...</div>
+            </div>
+            
+            <div class="row">
+                <div class="col order-last">Primeira</div>
+                <div class="col order-2">Segunda</div>
+                <div class="col order-first">Terceira</div>
+                <div class="col order-1">Quarta</div>
+                <div class="col order-3">Quinta</div>
+            </div>
+            
+            Aula 7 - Justify Content e Align Items <br/>
+            <div class="row justify-content-end">
+                <div class="col-3">Primeira</div>
+                <div class="col-3">Segunda</div>
+                <div class="col-3">Terceira</div>
+            </div>
+            
+            <div class="row justify-content-around">
+                <div class="col-3">Primeira</div>
+                <div class="col-3">Segunda</div>
+                <div class="col-3">Terceira</div>
+            </div>
+            
+            <div class="row justify-content-between">
+                <div class="col-3">Primeira</div>
+                <div class="col-3">Segunda</div>
+                <div class="col-3">Terceira</div>
+            </div>
+            <div class="row aula-justify justify-content-end align-items-end">
+                <div class="col-3 col-aula-justify">Primeira</div>
+                <div class="col-3 col-aula-justify">Segunda</div>
+                <div class="col-3 col-aula-justify">Terceira</div>
+            </div>  
+            
+            
+            <fieldset class="form-group">
+                <legend>Aula 8 - Media Component</legend>
+                
+                <div class="media">
+                    <img src="https://www.google.com/logos/google.jpg" class="mr-3 avatar">
+                    <div class="media-body">
+                        <h5>Titulo</h5>
+                        <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
+                            eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
+                            nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis
+                            scelerisque, eget. Quem num gosta di mim que vai caçá sua
+                            turmis! Pra lá , depois divoltis porris, paradis.</p>
+                    </div>
+                </div>
+                
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img src="https://www.google.com/logos/google.jpg" class="mr-3 avatar align-self-center">
+                        <div class="media-body">
+                            <h5>Titulo</h5>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
+                                eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
+                                nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis
+                                scelerisque, eget. Quem num gosta di mim que vai caçá sua
+                                turmis! Pra lá , depois divoltis porris, paradis.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img src="https://www.google.com/logos/google.jpg" class="mr-3 avatar align-self-end">
+                        <div class="media-body">
+                            <h5>Titulo</h5>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
+                                eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
+                                nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis
+                                scelerisque, eget. Quem num gosta di mim que vai caçá sua
+                                turmis! Pra lá , depois divoltis porris, paradis.</p>
+                        </div>
+                    </li>
+                    <li class="media">
+                        <img src="https://www.google.com/logos/google.jpg" class="mr-3 avatar">
+                        <div class="media-body">
+                            <h5>Titulo</h5>
+                            <p>Mussum Ipsum, cacilds vidis litro abertis. Mauris nec dolor in
+                                eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis
+                                nisl. Praesent vel viverra nisi. Mauris aliquet nunc non turpis
+                                scelerisque, eget. Quem num gosta di mim que vai caçá sua
+                                turmis! Pra lá , depois divoltis porris, paradis.</p>
+                        </div>
+                    </li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 9: Tipografia</legend>
+                <h4>Texto com H4 (Os Hs são procurados diretos pelos motores)</h4>
+                <div class="h4">Texto com div class 'H4'</div>
+                
+                <h3>Usuários <small class="text-muted">ADICIONAR</small></h3>
+                
+                <p> A palavra a seguir será <span class="mark">DESTACADA</span>!</p>
+                
+                <div class="aula9-tipografia text-right">
+                    Texto qualquer.
+                </div>
+                
+                <div class="aula9-tipografia text-center">
+                    Texto qualquer.
+                </div>
+                
+                <ul class="list-inline">
+                    <li class="list-inline-item">Item 1</li>
+                    <li class="list-inline-item">Item 2</li>
+                    <li class="list-inline-item">Item 3</li>
+                </ul>
+            </fieldset>
+        </div>
         
         <!-- Para evitar a demora para carregar -->
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
