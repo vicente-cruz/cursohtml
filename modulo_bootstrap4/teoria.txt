@@ -78,3 +78,16 @@ Aula 8: Media Component
             </div>
         </li>
     </ul>
+
+Aula 9: Tipografia
+    <div class="h4">Texto com div class 'H4'</div>
+    <h3>Usuários <small class="text-muted">ADICIONAR</small></h3>
+    <span class="mark">DESTACADA</span>
+
+Aula 9: Imagens
+    Criando imagens responsivas (reduzindo wallpapers)
+    <img src="minha-imagem.jpg" class="img-fluid" />
+    <figure class="figure">
+        <img src="image.jpg" alt="" class="figure-img img-fluid rounded img-thumbnail"/>
+        <figcaption class="figure-caption text-right">Grande Shaman</figcaption>
+    </figure>
