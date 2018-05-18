@@ -91,3 +91,9 @@ Aula 9: Imagens
         <img src="image.jpg" alt="" class="figure-img img-fluid rounded img-thumbnail"/>
         <figcaption class="figure-caption text-right">Grande Shaman</figcaption>
     </figure>
+
+Aula 10: Tabelas
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered table-hover table-sm">
+            <thead class="thead-light">
+                <tr><th>.../th></tr>
