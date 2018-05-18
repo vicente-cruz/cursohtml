@@ -6,11 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no" />
         <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
         <style type="text/css">
-            .row [class^=col-], .row .col {
+            .row_aula [class^=col-], .row_aula .col {
                 border:1px solid #CCC;
                 background-color:#DDD;
             }
-            .row {
+            .row_aula {
                 padding:10px;
                 background-color:#FF9999;
             }
@@ -52,33 +52,33 @@
     </head>
     <body>
         <div class="container">
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col">...</div>
                 <div class="col">...</div>
                 <div class="col">...</div>
             </div>
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col-2">...</div>
                 <div class="col-2">...</div>
                 <div class="col">...</div>
             </div>
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col-2">...</div>
                 <div class="col-md-2">...</div>
                 <div class="col-4">...</div>
             </div>
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col-2">...</div>
                 <div class="col-2">...</div>
                 <div class="col-2">...</div>
             </div>
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col-md-2">...</div>
                 <div class="col-md-2">...</div>
                 <div class="col-2">...</div>
             </div>
             
-            <div class="row">
+            <div class="row row_aula">
                 <div class="col order-last">Primeira</div>
                 <div class="col order-2">Segunda</div>
                 <div class="col order-first">Terceira</div>
@@ -86,30 +86,31 @@
                 <div class="col order-3">Quinta</div>
             </div>
             
-            Aula 7 - Justify Content e Align Items <br/>
-            <div class="row justify-content-end">
-                <div class="col-3">Primeira</div>
-                <div class="col-3">Segunda</div>
-                <div class="col-3">Terceira</div>
-            </div>
-            
-            <div class="row justify-content-around">
-                <div class="col-3">Primeira</div>
-                <div class="col-3">Segunda</div>
-                <div class="col-3">Terceira</div>
-            </div>
-            
-            <div class="row justify-content-between">
-                <div class="col-3">Primeira</div>
-                <div class="col-3">Segunda</div>
-                <div class="col-3">Terceira</div>
-            </div>
-            <div class="row aula-justify justify-content-end align-items-end">
-                <div class="col-3 col-aula-justify">Primeira</div>
-                <div class="col-3 col-aula-justify">Segunda</div>
-                <div class="col-3 col-aula-justify">Terceira</div>
-            </div>  
-            
+            <fieldset class="form-group">
+                <legend>Aula 7 - Justify Content e Align Items </legend>
+                <div class="row row_aula justify-content-end">
+                    <div class="col-3">Primeira</div>
+                    <div class="col-3">Segunda</div>
+                    <div class="col-3">Terceira</div>
+                </div>
+
+                <div class="row row_aula justify-content-around">
+                    <div class="col-3">Primeira</div>
+                    <div class="col-3">Segunda</div>
+                    <div class="col-3">Terceira</div>
+                </div>
+
+                <div class="row row_aula justify-content-between">
+                    <div class="col-3">Primeira</div>
+                    <div class="col-3">Segunda</div>
+                    <div class="col-3">Terceira</div>
+                </div>
+                <div class="row row_aula aula-justify justify-content-end align-items-end">
+                    <div class="col-3 col-aula-justify">Primeira</div>
+                    <div class="col-3 col-aula-justify">Segunda</div>
+                    <div class="col-3 col-aula-justify">Terceira</div>
+                </div>  
+            </fieldset>
             
             <fieldset class="form-group">
                 <legend>Aula 8 - Media Component</legend>
@@ -235,6 +236,39 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 12: Alertas e avisos</legend>
+                <div class="row justify-content-between">
+                    <div class="col alert alert-primary" role="alert">alert-primary</div>
+                    <div class="col alert alert-secondary" role="alert">alert-secondary</div>
+                    <div class="col alert alert-success" role="alert">alert-success</div>
+                    <div class="col alert alert-warning" role="alert">alert-warning</div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col alert alert-danger" role="alert">alert-danger</div>
+                    <div class="col alert alert-info" role="alert">alert-info</div>
+                    <div class="col alert alert-light" role="alert">alert-light</div>
+                    <div class="col alert alert-dark" role="alert">alert-dark</div>
+                </div>
+                
+                <div class="row">
+                    <div class="col alert alert-success alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">CERTO</h4>
+                        Mensagem enviada com sucesso!
+                        <button class="close" data-dismiss="alert" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="col alert alert-danger alert-dismissible fade show" role="alert">
+                        <h4 class="alert-heading">ERRADO</h4>
+                        E-mail e/ou senha incorretos!
+                        <button class="close" data-dismiss="alert" aria-label="Fechar">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </fieldset>
         </div>
