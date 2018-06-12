@@ -48,6 +48,12 @@
                 height:100px;
                 border:1px solid #000000;
             }
+            
+            #aula15_area, #aula15_area2 {
+                border:1px solid #000;
+                padding:20px;
+                background-color:#EEEEEE;
+            }
         </style>
     </head>
     <body>
@@ -335,6 +341,73 @@
             </fieldset>
             
             <fieldset>
+                <legend>Aula 15 - Collapse (pre-accordion)</legend>
+                <button class="btn btn-primary" data-toggle="collapse" data-target="#aula15_area">1 - Mostrar/Esconder</button>
+                <div id="aula15_area" class="collapse">
+                    Texto 1: escondido para aparecer!
+                </div>
+                
+                <button class="btn btn-secondary" data-toggle="collapse" data-target="#aula15_area2">2 - Mostrar/Esconder</button>
+                <div id="aula15_area2" class="collapse">
+                    Texto 2: escondido para aparecer!
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 16 - Accordion (para perguntas e respostas</legend>
+                
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link"
+                                    data-toggle="collapse"
+                                    data-target="#aula16_card1"
+                                    aria-controls="aula16_card1">Titulo do CARD 1</button>
+                        </div>
+                        <div id="aula16_card1"
+                             class="collapse"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                Mussum Ipsum, cacilds vidis litro abertis.
+                                Todo mundo vê os porris que eu tomo, mas ninguém vê
+                                os tombis que eu levo! Não sou faixa preta cumpadi,
+                                sou preto inteiris, inteiris. Quem num gosta di mim
+                                que vai caçá sua turmis! Leite de capivaris, leite
+                                de mula manquis sem cabeça.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header">
+                            <button class="btn btn-link"
+                                    data-toggle="collapse"
+                                    data-target="#aula16_card2"
+                                    aria-controls="aula16_card2">Titulo do CARD 2</button>
+                        </div>
+                        <div id="aula16_card2"
+                             class="collapse"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                Mussum Ipsum, cacilds vidis litro abertis.
+                                Todo mundo vê os porris que eu tomo, mas ninguém vê
+                                os tombis que eu levo! Não sou faixa preta cumpadi,
+                                sou preto inteiris, inteiris. Quem num gosta di mim
+                                que vai caçá sua turmis! Leite de capivaris, leite
+                                de mula manquis sem cabeça.
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header"></div>
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset>
                 <legend>Aula 22 - Navbar</legend>
                 <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFFF99">
@@ -366,8 +439,8 @@
                     </ul>
                 </div>
             </fieldset>
-        </div>
-        
+            
+        </div>        
         <!-- Para evitar a demora para carregar -->
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
