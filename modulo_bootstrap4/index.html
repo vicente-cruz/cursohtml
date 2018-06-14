@@ -566,6 +566,107 @@
             </fieldset>
             
             <fieldset>
+                <legend>Aula 20 - List Group</legend>
+                <div style="width:600px;margin:20px;">
+                    <ul class="list-group">
+                        <li class="list-group-item">&lt;ul class="list-group"&gt;&lt;/ul&gt;</li>
+                        <li class="list-group-item">Item 1 (class="list-group-item")</li>
+                        <li class="list-group-item active">Item 2 (class="list-group-item active")</li>
+                        <li class="list-group-item disabled">Item 3 (class="list-group-item disabled")</li>
+                    </ul>
+                    <br/><br/>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item">&lt;div class="list-group list-group-flush"&gt;&lt;/div&gt;</a>
+                        <a href="#" class="list-group-item">Link 1 (class="list-group-item")</a>
+                        <a href="#" class="list-group-item list-group-item-action">Link 2 (class="list-group-item list-group-item-action")</a>
+                        <a href="#" class="list-group-item list-group-item-danger">Link 3 (class="list-group-item  list-group-item-danger")</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Link 3 (class="list-group-item  list-group-item-action list-group-item-danger")</a>
+                    </div>
+                    <br/><br/>
+                    
+                    <ul class="list-group">
+                        <li class="list-group-item">&lt;ul class="list-group"&gt;&lt;/ul&gt;</li>
+                        <li class="list-group-item">
+                            Link 1
+                            <span class="badge badge-primary badge-pill">12</span>
+                            (span class="badge badge-primary badge-pill")
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Link 2 (class="list-group-item d-flex justify-content-between align-items-center"
+                            <span class="badge badge-danger badge-pill">13</span>
+                            (class="badge badge-danger badge-pill")
+                        </li>
+                        <li class="list-group-item">Link 3</li>
+                    </ul>
+                    <br/><br/>
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">&lt;div class="list-group"&gt;</a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5>Titulo da noticia 1</h5>
+                                <small>Há 2 dias</small>
+                            </div>
+                            <p>Mussum Ipsum, cacilds vidis litro...</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5>Titulo da noticia 2</h5>
+                                <small>Há 5 dias</small>
+                            </div>
+                            <p>Mussum Ipsum, cacilds vidis litro...</p>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between">
+                                <h5>Titulo da noticia 3</h5>
+                                <small>Há 10 dias</small>
+                            </div>
+                            <p>Mussum Ipsum, cacilds vidis litro...</p>
+                        </a>
+                    </div>
+                </div>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 21 - Modal</legend>
+                
+                <button class="btn btn-primary btn-block"
+                        data-toggle="modal"
+                        data-target="#meuModal">Abrir modal (data-toggle="modal" data-target="#meuModal")</button>
+                <div id="meuModal" class="modal fade">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Meu titulo</h5>
+                                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                            </div>
+                            <div class="modal-body">
+                                &lt;div id="meuModal" class="modal fade"&gt;<br/>
+                                --&lt;div class="modal-dialog modal-dialog-centered modal-lg"&gt;<br/>
+                                ----&lt;div class="modal-content"&gt;<br/>
+                                ------&lt;div class="modal-header"&gt;<br/>
+                                --------&lt;h5 class="modal-title"&gt;MeuTitulo&lt;/h5&gt;<br/>
+                                --------&lt;button class="close" data-dismiss="modal"&gt;&lt;span&gt;&times;&lt;/span&gt;&lt;/button&gt;<br/>
+                                ------&lt;/div&gt;<br/>
+                                ------&lt;div class="modal-body"&gt;<br/>
+                                ------&lt;/div&gt;<br/>
+                                ------&lt;div class="modal-footer"&gt;<br/>
+                                --------&lt;button class="btn btn-danger" data-dismiss="modal"&gt;Fechar janela&lt;/button&gt;<br/>
+                                ------&lt;/div&gt;<br/>
+                                ----&lt;/div&gt;<br/>
+                                --&lt;/div&gt;<br/>
+                                &lt;/div&gt;<br/>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary">Salvar</button>
+                                <button class="btn btn-danger" data-dismiss="modal">Fechar janela</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset>
                 <legend>Aula 22 - Navbar</legend>
                 <!--<nav class="navbar navbar-expand-lg navbar-dark bg-dark">-->
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#FFFF99">
