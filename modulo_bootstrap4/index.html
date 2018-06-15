@@ -663,7 +663,6 @@
                         </div>
                     </div>
                 </div>
-                
             </fieldset>
             
             <fieldset>
@@ -699,9 +698,51 @@
                 </div>
             </fieldset>
             
+            <fieldset>
+                <legend>Aula 23 - Paginação</legend>
+                
+                <ul class="pagination pagination-sm justify-content-center">
+                    <li class="page-item"><a href="#" class="page-link">('ul' class="pagination pagination-(lg/sm) justify-content-center", 'li' class="page-item", 'a' class="page-link")</a></li>
+                    <li class="page-item"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">3 ('li' class="page-item active")</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                </ul>
+                
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a href="#" class="page-link">Anterior (class="page-item disabled")</a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">Próximo</a></li>
+                </ul>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 24 - Tooltip</legend>
+                
+                <button class="btn btn-success"
+                        data-toggle="tooltip"
+                        data-placement="right"
+                        title="Ao clicar, salvará os dados do usuário.">Salvar</button>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Aula 25 - Utilidades</legend>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://getbootstrap.com" target="_blank">Acessar site do Bootstrap</a></li>
+                    <li class="list-group-item">Ir em <strong>UTILITIES</strong></li>
+                </ul>
+            </fieldset>
         </div>        
         <!-- Para evitar a demora para carregar -->
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
     </body>
 </html>
